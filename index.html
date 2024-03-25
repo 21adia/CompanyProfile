@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-white dark:bg-df1">
+    <header>
+        <section id="topheader" class="fixed bg-white shadow-md top-0 z-20  right-0 left-0 flex justify-between dark:bg-df2">
+            <div class="flex items-center justify-between gap-16 py-6 w-4/5 m-auto flex-wrap">
+                <span class="font-bold text-2xl md:text-4xl dark:text-white flex-[1]">Hasan Basri Bayat</span>
+                <div class="md:hidden block dark:text-white" onclick="showhidemenu()"><i
+                        class="bx bx-menu text-4xl"></i></div>
+                <div id="menu"
+                    class="flex-col basis-auto grow justify-end items-center hidden md:flex md:flex-row md:items-center gap-12 md:gap-3">
+                    <ul class="flex gap-8 flex-col md:flex-row">
+                        <li><a href="" class="text-2xl dark:text-white hover:text-blue-400">About</a></li>
+                        <li><a href="" class="text-2xl dark:text-white hover:text-blue-400">Articles</a></li>
+                        <li><a href="" class="text-2xl dark:text-white hover:text-blue-400">Projects</a></li>
+                    </ul>
+                    <div class="flex gap-8 items-center">
+                        <div class="flex items-center"><i class='bx bx-search dark:text-white text-2xl'></i></div>
+                        <div class="w-6 h-6 rounded-full flex justify-center items-center">
+                            <button class="flex items-center"><i class='bx bx-sun dark:text-white text-2xl'
+                                    id="iconDark" onclick="switchDark()"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <div id="jumbotron" class="h-auto w-full">
+                <div class="flex md:flex-row flex-col-reverse justify-between w-4/5 m-auto gap-10 my-24 items-center">
+                    <div class="md:w-1/2 w-full flex flex-col gap-6">
+                        <p class="text-gray-400 md:text-xl text-sm font-semibold dark:text-gray-200">
+                            PROFESSIONAL
+                        </p>
+                        <h1 class="md:text-6xl  text-3xl font-bold dark:text-white">Flutter Developer and UI/UX Designer
+                        </h1>
+                        <p class="text-gray-400 md:text-xl text-base dark:text-gray-200">my main goals is travelling the
+                            whole world while working remotely!
+                            if you'd like to help/work wiith me, Let's get in touch</p>
+                        <button
+                            class="md:w-[35%] md:text-2xl text-xl font-bold py-3 px-4 bg-black text-white rounded-xl hover:ring hover:ring-df1/50 dark:hover:ring-df2 transition duration-200 shadow-lg">Say
+                            Hello
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 mt-24">
+                        <img src="assets/img/Group 1191.png" alt="" class="w-full">
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <section class="md:mt-12 mt-24">
+        <div class="w-[80%] m-auto my-24">
+            <div class="flex justify-between">
+                <h1 class="font-bold text-2xl dark:text-white">Latest Article</h1>
+                <p class="font-semibold text-gray-500 dark:text-white text-2xl hover:text-blue-400">SEE ALL</p>
+            </div>
+            <div class="flex mt-6 gap-12 md:flex-row flex-col">
+                <div class="md:w-1/2 w-full">
+                    <img src="assets/img/flutter hooks.jpeg" alt="" class="rounded-xl">
+                    <!-- <div
+                        class="relative md:left-[75%] left-[60%] md:top-4 top-3 py-2 px-3 bg-black/40 text-white font-bold uppercase md:w-[22%] w-[35%] rounded-lg flex justify-center items-center md:text-md text-sm">
+                        3 MINS READ
+                    </div> -->
+                </div>
+                <div class="flex flex-col md:w-1/2 w-full gap-6">
+                    <div class="flex justify-between">
+                        <p class="md:text-2xl text-lg text-gray-500 font-bold dark:text-white">BEST PACKAGE - PART 1</p>
+                        <p class="md:text-2xl text-lg text-gray-500 dark:text-white">24 MAY 2022</p>
+                    </div>
+                    <h1 class="font-bold md:text-4xl text-2xl dark:text-white">Minimalist Guide to Flutter Hooks</h1>
+                    <p class="text-gray-500 text-xl dark:text-gray-300 justify-center">Hook are a new kind of object that manages a widget life-
+                        cyclos. Hooks are a new kind of object that manages a widget
+                        life-cycles. they exist for one reason: increase the code-sharing
+                        between widget by removing duplicates. they exist for one
+                        reason: increase the fo-cycles. code-sharing between...
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 flex gap-12 flex-col md:flex-row">
+                <div class="md:w-1/2 w-full">
+                    <img src="assets/img/flutter hooks.jpeg" alt="" class="rounded-xl">
+                    <div class="flex flex-col gap-6 mt-4">
+                        <div class="flex justify-between">
+                            <p class="md:text-2xl text-lg text-gray-500 font-bold dark:text-white">BEST PACKAGE - PART 1
+                            </p>
+                            <p class="md:text-xl text-lg text-gray-500 dark:text-white">24 MAY 2022</p>
+                        </div>
+                        <h1 class="font-bold md:text-4xl text-2xl dark:text-white">Minimalist Guide to Flutter Hooks</h1>
+                        <p class="text-gray-500 text-xl dark:text-gray-300">Hook are a new kind of object that manages a widget life-
+                            cyclos. Hooks are a new kind of object that manages a widget
+                            life-cycles. they exist for one reason: increase the code-sharing
+                            between widget by removing duplicates. they exist for one
+                            reason: increase the fo-cycles. code-sharing between...
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <img src="assets/img/flutter hooks.jpeg" alt="" class="rounded-xl">
+                    <div class="flex flex-col gap-6 mt-4">
+                        <div class="flex justify-between">
+                            <p class="md:text-2xl text-lg text-gray-500 font-bold dark:text-white">BEST PACKAGE - PART 1
+                            </p>
+                            <p class="md:text-2xl text-lg text-gray-500 dark:text-white">24 MAY 2022</p>
+                        </div>
+                        <h1 class="font-bold md:text-4xl text-2xl dark:text-white">Minimalist Guide to Flutter Hooks</h1>
+                        <p class="text-gray-500 text-xl dark:text-gray-300">Hook are a new kind of object that manages a widget life-
+                            cyclos. Hooks are a new kind of object that manages a widget
+                            life-cycles. they exist for one reason: increase the code-sharing
+                            between widget by removing duplicates. they exist for one
+                            reason: increase the fo-cycles. code-sharing between...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <script>
+        let xstatus = false;
+        window.onscroll = function () { menu() };
+        function menu() {
+            if (document.documentElement.scrollTop > 20) {
+                document.getElementById("topheader").classList.add("bg-white");
+                document.getElementById("topheader").classList.add("shadow-md");
+            } else {
+                if (!xstatus && document.documentElement.scrollTop < 20) {
+                    document.getElementById("topheader").classList.remove("bg-white");
+                    document.getElementById("topheader").classList.remove("shadow-lg");
+                }
+            }
+        }
+        function showhidemenu() {
+            if (!xstatus) {
+                document.getElementById("menu").classList.remove("hidden");
+                document.getElementById("menu").classList.add("flex");
+                if (document.documentElement.scrollTop < 20) {
+                    document.getElementById("topheader").classList.add("bg-white");
+                    document.getElementById("topheader").classList.add("shadow-lg");
+                }
+                xstatus = true;
+            } else {
+                document.getElementById("menu").classList.remove("flex");
+                document.getElementById("menu").classList.add("hidden");
+                if (document.documentElement.scrollTop < 20) {
+                    document.getElementById("topheader").classList.remove("bg-white");
+                    document.getElementById("topheader").classList.remove("shadow-md");
+                }
+                xstatus = false;
+            }
+        }
+
+        function switchDark() {
+            const sunmoon = document.documentElement.classList.toggle('dark');
+            if (sunmoon == true) {
+                document.getElementById('iconDark').classList.add('bx-sun');
+                document.getElementById('iconDark').classList.remove('bx-moon');
+            } else {
+                document.getElementById('iconDark').classList.add('bx-moon');
+                document.getElementById('iconDark').classList.remove('bx-sun');
+            }
+        }
+    </script>
+</body>
+
+</html>
